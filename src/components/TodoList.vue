@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <TodoItem />
+      <TodoItem v-for="todo of todos" v-bind:todo="todo" />
     </ul>
   </div>
 </template>
