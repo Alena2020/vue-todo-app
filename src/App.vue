@@ -26,6 +26,10 @@ export default {
 </script>
 
 <style>
+body {
+  background: linear-gradient(90deg, #0dcaf0 0%, lavender 100%);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
