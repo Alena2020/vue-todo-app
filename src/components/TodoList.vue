@@ -17,6 +17,11 @@ export default {
   components: {
     TodoItem,
   },
+  methods: {
+    removeTodo(id) {
+      this.$emit("remove-todo", id);
+    },
+  },
 };
 </script>
 
