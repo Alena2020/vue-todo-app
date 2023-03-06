@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Todo application</h1>
-    <AddTodo />
+    <AddTodo @add-todo="addTodo" />
     <hr />
     <TodoList v-bind:todos="todos" @remove-todo="removeTodo" />
   </div>
@@ -11,7 +11,7 @@
 import TodoList from "@/components/TodoList";
 import AddTodo from "@/components/AddTodo";
 export default {
-  name: "App",
+  name: "app",
   data() {
     return {
       todos: [
@@ -24,6 +24,9 @@ export default {
   methods: {
     removeTodo(id) {
       this.todos = this.todos.filter((t) => t.id !== id);
+    },
+    addTodo(todo) {
+      this.todos.push(todo);
     },
   },
   components: {
@@ -45,5 +48,8 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
