@@ -14,12 +14,15 @@ export default {
   name: "app",
   data() {
     return {
-      todos: [
-        { id: 1, title: "Todo item 1", completed: false },
-        { id: 2, title: "Todo item 2", completed: false },
-        { id: 3, title: "Todo item 3", completed: false },
-      ],
+      todos: [],
     };
+  },
+  mounted() {
+    fetch("https://jsonplaceholder.typicode.com/todos?_limit=7")
+      .then((response) => response.json())
+      .then((json) => {
+        this.todos = json;
+      });
   },
   methods: {
     removeTodo(id) {
