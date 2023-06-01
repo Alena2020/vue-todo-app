@@ -6,6 +6,12 @@
 </template>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: linear-gradient(90deg, #0dcaf0 0%, lavender 100%);
 }

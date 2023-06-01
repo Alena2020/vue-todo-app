@@ -26,6 +26,7 @@ export default {
 <style scoped>
 li {
   border: 1px solid lavender;
+  border-radius: 25px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 2rem;
@@ -37,11 +38,13 @@ input {
 }
 
 .btn-remove {
-  background: purple;
+  background: mediumorchid;
+  box-shadow: 2px 2px 2px aqua, inset 2px 3px 5px midnightblue;
   color: #fff;
   border-radius: 50%;
   font-weight: bold;
   margin-left: 1rem;
+  padding: 1px 4px;
 }
 
 .done {

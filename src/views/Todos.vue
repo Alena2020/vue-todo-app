@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Todo application</h2>
+    <h2>Todos</h2>
     <router-link to="/">Home</router-link>
     <hr />
     <AddTodo @add-todo="addTodo" />
@@ -72,6 +72,8 @@ export default {
 
 <style scoped>
 select {
-  margin: 5px;
+  margin: 15px;
+  border-radius: 25px;
+  padding: 5px;
 }
 </style>
