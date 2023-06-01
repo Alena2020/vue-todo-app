@@ -1,6 +1,8 @@
-# vue-todo-app
+# vue-todo-app 📋
 
 ## A project based on YouTube video tutorials from a [Vladilen Minin](https://www.youtube.com/watch?v=OlnwgS-gk8Y&list=WL&index=39).
+
+## Demo: https://alena2020.github.io/vue-todo-app/
 
 ## Project setup
 
