@@ -2,14 +2,12 @@
   <div>
     <h2>Todos</h2>
     <router-link to="/">Home</router-link>
-    <hr />
     <AddTodo @add-todo="addTodo" />
     <select v-model="filter">
       <option value="all">All</option>
       <option value="completed">Completed</option>
       <option value="not-completed">Not completed</option>
     </select>
-    <hr />
     <Loader v-if="loading"/>
     <TodoList v-else-if="filteredTodos.length" v-bind:todos="filteredTodos" @remove-todo="removeTodo" />
     <p v-else>No todos!</p>

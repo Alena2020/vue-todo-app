@@ -31,7 +31,9 @@ export default {
 <style scoped>
 form {
   display: flex;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;  
+  margin-bottom: 10px;
 }
 
 input {
@@ -54,5 +56,17 @@ input {
   background: mediumpurple;
   box-shadow: 2px 2px 2px aqua, inset -1px 10px 10px midnightblue;
   color: white;
+}
+
+@media (max-width: 600px) {
+  input {
+  width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  input {
+  width: 250px;
+  }
 }
 </style>
